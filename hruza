@@ -1,0 +1,58 @@
+$instance = hruza;
+class hruza {
+    public $neco1 = 5; 
+    public $neco2 = 2;
+    public $neco3 = 25;
+    public $neco4 = 12;
+    public $neco5 =28 ;
+    protected $neco6 = 29;
+    protected $neco7 = 30; 
+    protected $neco8 = 50;
+    private $neco9 = 80;
+    private $neco10 = 100;
+
+    public function getneco1 () {
+       return $this-> neco1;
+    }
+    public function getneco2 () {
+       return $this-> neco2;
+    }
+    public function getneco3 () {
+       return $this-> neco3;
+    }
+    public function getneco4 () {
+       return $this-> neco4;
+    }
+    public function getneco5 () {
+       return $this-> neco5;
+    }
+
+    private function setneco9 () {
+       return $this-> neco9; 
+    }
+    private function setneco10 () {
+        return $this-> neco10;
+    }
+    public function _construct () {
+}
+} 
+var_dump ($instance);
+$neco1 = hruza();
+$neco1-> getneco1('10');
+echo $neco1-> getneco1();
+echo '<br>';
+$neco2 = new hruza();
+$neco2-> getneco2('3');
+echo $neco2-> getneco2();
+echo '<br>';
+$neco3 = new hruza();
+$neco3-> getneco3('50');
+echo $neco3-> getneco3();
+echo '<br>';
+$neco4 = new hruza();
+$neco4-> getneco4('11');
+echo $neco4-> getneco4();
+echo '<br>';
+$neco5 = new hruza();
+$neco5-> getneco5('29');
+echo $neco5-> getneco5();v
