@@ -1,27 +1,49 @@
 $instance = hruza;
 class hruza {
+
+// zalozeni tridy 
+
     public $neco1 = 5; 
     public $neco2 = 2;
     public $neco3 = 25;
     public $neco4 = 12;
     public $neco5 =28 ;
+ 
+ // veřejná funkce 
+ 
     protected $neco6 = 29;
     protected $neco7 = 30; 
     protected $neco8 = 50;
+    
+    // chráněná funkce 
+    
     private $neco9 = 80;
     private $neco10 = 100;
 
+// privátní funkce 
+
     public function getneco1 () {
+    
+    // nastaví veřejnou funkci 
+    
        return $this-> neco1;
+       
+       // vrátí veřejnou funkci 
     }
     public function getneco2 () {
        return $this-> neco2;
+       
+       // nastaví a vrátí funkci 
     }
     public function getneco3 () {
        return $this-> neco3;
+       
+       // nastaví a vrátí funkci 
     }
     public function getneco4 () {
        return $this-> neco4;
+       
+       // nastaví a vrátí funkci 
     }
     public function getneco5 () {
        return $this-> neco5;
@@ -39,16 +61,16 @@ class hruza {
 var_dump ($instance);
 $neco1 = hruza();
 $neco1-> getneco1('10');
-echo $neco1-> getneco1();
+echo $neco1-> getneco1();   // vypise echo neco1 
 echo '<br>';
 $neco2 = new hruza();
 $neco2-> getneco2('3');
-echo $neco2-> getneco2();
+echo $neco2-> getneco2();   // vypise echo neco2 
 echo '<br>';
 $neco3 = new hruza();
 $neco3-> getneco3('50');
-echo $neco3-> getneco3();
-echo '<br>';
+echo $neco3-> getneco3(); 
+echo '<br>';               // vypise echo br 
 $neco4 = new hruza();
 $neco4-> getneco4('11');
 echo $neco4-> getneco4();
